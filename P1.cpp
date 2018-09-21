@@ -109,6 +109,8 @@ Fila::Fila(int _tam, string b)
 Fila::~Fila()
 {
     delete[] nm;
+    if(elemento == 0)
+        total_filas--;
 }
 
 int Fila::get_total_filas()
