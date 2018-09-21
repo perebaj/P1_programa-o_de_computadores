@@ -36,7 +36,10 @@ class Fila
         }
     }
 };
-
+/*
+Obj: valida o tamanho do vetor de string e se for válido aloca-o dinamicamente
+@param  _tam    tamanho do vetor
+*/
 void Fila::set_tamanho(int _tamanho)
 {
     if (_tamanho > 0)
@@ -49,7 +52,9 @@ void Fila::set_tamanho(int _tamanho)
 }
 int Fila::total_filas = 0;
 int Fila::total_elementos = 0;
-
+/*
+Obj: Retira um elemento da fila
+*/
 void Fila::set_retira_elemento()
 {
     if (elemento > 0)
@@ -66,6 +71,10 @@ void Fila::set_retira_elemento()
     else
         cout << "Nao e possivel retirar um elemento!" << endl;
 }
+/*
+Obj: inseri um elemento da fila
+@param   string a  Elemento que vai ser inserido na fila
+*/
 void Fila::set_inserir_elemento(string a)
 {
     if (elemento < tamanho)
@@ -77,11 +86,19 @@ void Fila::set_inserir_elemento(string a)
     else
         cout << "Fila preechida ao maximo! Nao e possivel adicionar mais elementos" << endl;
 }
+/*
+Obj: aloca o nome digitado pelo usuario na variavel string privada
+*/
 void Fila::name(string a)
 {
     nome = a;
 }
+/*
+Contrutor 
 
+@   int _tam    tamanaho do vetor
+@   string b    nome da pessoa q a fila vai receber
+*/
 Fila::Fila(int _tam, string b)
 {
     set_tamanho(_tam);
@@ -102,6 +119,9 @@ int Fila::get_total_elementos()
 {
     return total_elementos;
 }
+/*
+Obj: Printa os dados
+*/
 void Fila::print() const
 {
     cout << "Numero Total de filas: " << Fila::get_total_filas() << endl;
@@ -143,6 +163,6 @@ int main()
 
 
     return 0;
-    cout  << "eoq";
+   
 }
 
