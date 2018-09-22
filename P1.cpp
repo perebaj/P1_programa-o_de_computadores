@@ -36,14 +36,12 @@ class Fila
         }
     }
 };
-<<<<<<< HEAD
 
-=======
 /*
 Obj: valida o tamanho do vetor de string e se for válido aloca-o dinamicamente
 @param  _tam    tamanho do vetor
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
+
 void Fila::set_tamanho(int _tamanho)
 {
     if (_tamanho > 0)
@@ -56,13 +54,10 @@ void Fila::set_tamanho(int _tamanho)
 }
 int Fila::total_filas = 0;
 int Fila::total_elementos = 0;
-<<<<<<< HEAD
 
-=======
 /*
 Obj: Retira um elemento da fila
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
 void Fila::set_retira_elemento()
 {
     if (elemento > 0)
@@ -79,13 +74,12 @@ void Fila::set_retira_elemento()
     else
         cout << "Nao e possivel retirar um elemento!" << endl;
 }
-<<<<<<< HEAD
-=======
+
 /*
 Obj: inseri um elemento da fila
 @param   string a  Elemento que vai ser inserido na fila
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
+
 void Fila::set_inserir_elemento(string a)
 {
     if (elemento < tamanho)
@@ -97,26 +91,21 @@ void Fila::set_inserir_elemento(string a)
     else
         cout << "Fila preechida ao maximo! Nao e possivel adicionar mais elementos" << endl;
 }
-<<<<<<< HEAD
-=======
+
 /*
 Obj: aloca o nome digitado pelo usuario na variavel string privada
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
 void Fila::name(string a)
 {
     nome = a;
 }
-<<<<<<< HEAD
 
-=======
 /*
 Contrutor 
 
 @   int _tam    tamanaho do vetor
 @   string b    nome da pessoa q a fila vai receber
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
 Fila::Fila(int _tam, string b)
 {
     set_tamanho(_tam);
@@ -127,11 +116,9 @@ Fila::Fila(int _tam, string b)
 Fila::~Fila()
 {
     delete[] nm;
-<<<<<<< HEAD
-=======
     if(elemento == 0)
         total_filas--;
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
+
 }
 
 int Fila::get_total_filas()
@@ -142,20 +129,18 @@ int Fila::get_total_elementos()
 {
     return total_elementos;
 }
-<<<<<<< HEAD
-=======
+
 /*
 Obj: Printa os dados
 */
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
+
 void Fila::print() const
 {
     cout << "Numero Total de filas: " << Fila::get_total_filas() << endl;
     cout << "Numero Total de Elementos: " << Fila::get_total_elementos() << endl;
     cout << "Elementos da Fila " << get_elemento() << endl;
 }
-<<<<<<< HEAD
-=======
+
 int main()
 {
     Fila f1(10, "Jose");
@@ -193,5 +178,4 @@ int main()
     return 0;
    
 }
->>>>>>> dc2064f8d016f6440265227c291cde36823cae72
 
