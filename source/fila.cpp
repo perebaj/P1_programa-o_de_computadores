@@ -1,8 +1,13 @@
 #include <iostream>
 #include <string>
+//#include "fila.h"
 using namespace std;
 //#include "fila.h"
+/*
+Obj  -  Verifica a validade do tamanho da fila
 
+@param  _tamanho  Tamanho que a fila foi setadas
+*/
 void Fila::set_tamanho(int _tamanho)
 {
     if (_tamanho > 0)
@@ -37,7 +42,7 @@ void Fila::set_retira_elemento()
 }
 
 /*
-Obj: inseri um elemento da fila
+Obj: inserir um elemento na fila
 @param   string a  Elemento que vai ser inserido na fila
 */
 
@@ -74,6 +79,10 @@ Fila::Fila(int _tam, string b)
     total_filas++;
     set_inserir_elemento(b);
 }
+/*
+*Deleta a memoria alocada dinamicamente
+*Subtrai o numero total de filas caso o numero de elementos atual da fila seja igual a zero
+*/
 Fila::~Fila()
 {
     delete[] nm;
@@ -92,7 +101,7 @@ int Fila::get_total_elementos()
 }
 
 /*
-Obj: Printa os dados
+Obj: Printa os dados na tela
 */
 
 void Fila::print() const
