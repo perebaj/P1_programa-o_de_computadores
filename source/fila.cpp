@@ -2,7 +2,7 @@
 #include <string>
 //#include "fila.h"
 using namespace std;
-//#include "fila.h"
+
 /*
 Obj  -  Verifica a validade do tamanho da fila
 
@@ -67,7 +67,7 @@ void Fila::name(string a)
 }
 
 /*
-Contrutor 
+ConStrutor 
 
 @   int _tam    tamanaho do vetor
 @   string b    nome da pessoa q a fila vai receber
@@ -91,7 +91,7 @@ Fila::~Fila()
 
 }
 
-int Fila::get_total_filas()
+int Fila::get_total_filas() 
 {
     return total_filas;
 }
